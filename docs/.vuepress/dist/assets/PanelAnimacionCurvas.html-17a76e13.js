@@ -1,0 +1,1 @@
+const i=JSON.parse('{"key":"v-5d0fb9cc","path":"/comp-vis/PanelAnimacionCurvas.html","title":"PanelAnimacionCurvas","lang":"en-US","frontmatter":{"title":"PanelAnimacionCurvas"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/PanelAnimacionCurvas.md"}');export{i as data};

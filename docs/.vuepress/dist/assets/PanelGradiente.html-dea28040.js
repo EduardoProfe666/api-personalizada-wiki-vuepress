@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1a57a814","path":"/comp-vis/PanelGradiente.html","title":"PanelGradiente","lang":"en-US","frontmatter":{"title":"PanelGradiente"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/PanelGradiente.md"}');export{e as data};

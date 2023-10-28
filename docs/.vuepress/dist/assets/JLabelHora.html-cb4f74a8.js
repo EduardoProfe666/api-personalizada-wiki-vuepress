@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-34cf5076","path":"/comp-vis/JLabelHora.html","title":"JLabelHora","lang":"en-US","frontmatter":{"title":"JLabelHora"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/JLabelHora.md"}');export{a as data};

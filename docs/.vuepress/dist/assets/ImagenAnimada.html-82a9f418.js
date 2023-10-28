@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-71a06b1a","path":"/comp-vis/ImagenAnimada.html","title":"ImagenAnimada","lang":"en-US","frontmatter":{"title":"ImagenAnimada"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/ImagenAnimada.md"}');export{a as data};

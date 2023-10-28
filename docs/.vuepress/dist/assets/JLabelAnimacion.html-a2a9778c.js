@@ -1,0 +1,1 @@
+const i=JSON.parse('{"key":"v-10b6c93c","path":"/comp-vis/JLabelAnimacion.html","title":"JLabelAnimacion","lang":"en-US","frontmatter":{"title":"JLabelAnimacion"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/JLabelAnimacion.md"}');export{i as data};

@@ -1,0 +1,1 @@
+const i=JSON.parse('{"key":"v-76de9fcf","path":"/comp-vis/JTextFieldModificado.html","title":"JTextFieldModificado","lang":"en-US","frontmatter":{"title":"JTextFieldModificado"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/JTextFieldModificado.md"}');export{i as data};

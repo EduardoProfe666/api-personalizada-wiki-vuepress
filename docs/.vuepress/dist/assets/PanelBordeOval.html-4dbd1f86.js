@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-37233eb1","path":"/comp-vis/PanelBordeOval.html","title":"PanelBordeOval","lang":"en-US","frontmatter":{"title":"PanelBordeOval"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/PanelBordeOval.md"}');export{e as data};

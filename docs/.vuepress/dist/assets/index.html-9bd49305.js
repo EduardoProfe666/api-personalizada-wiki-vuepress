@@ -1,0 +1,1 @@
+const i=JSON.parse('{"key":"v-51b42076","path":"/comp-logic/","title":"Página Inicial de Lógica","lang":"en-US","frontmatter":{"title":"Página Inicial de Lógica"},"headers":[],"git":{"contributors":[]},"filePathRelative":"comp-logic/README.md"}');export{i as data};

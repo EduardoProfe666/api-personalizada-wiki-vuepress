@@ -1,0 +1,1 @@
+const i=JSON.parse('{"key":"v-6fde4e0a","path":"/comp-vis/Notificaciones.html","title":"Notificaciones","lang":"en-US","frontmatter":{"title":"Notificaciones"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/Notificaciones.md"}');export{i as data};

@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-c06e6ac2","path":"/instalacion/Bibliotecas.html","title":"Bibliotecas usadas en la api","lang":"en-US","frontmatter":{"title":"Bibliotecas usadas en la api"},"headers":[],"git":{"contributors":[]},"filePathRelative":"instalacion/Bibliotecas.md"}');export{a as data};

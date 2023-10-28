@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ed1d69be","path":"/comp-vis/CarruselImagenes.html","title":"CarruselImagenes","lang":"en-US","frontmatter":{"title":"CarruselImagenes"},"headers":[{"level":2,"title":"Provisional","slug":"provisional","link":"#provisional","children":[]}],"git":{"contributors":[]},"filePathRelative":"comp-vis/CarruselImagenes.md"}');export{e as data};
