@@ -34,10 +34,10 @@ export default {
   theme: defaultTheme({
     repo: "EduardoProfe666/Proyecto-Api-Personalizada",
     repoLabel: "👾Proyecto Api Personalizada👾",
-    editLink: false,
-    editLinkText: "",
+    editLink: true,
+    editLinkText: "Editar página de documentación",
     searchPlaceholder: "Buscar...",
-    lastUpdated: false,
+    lastUpdated: true,
     logo: "/icons/favicon.png",
     navbar: [
       {
