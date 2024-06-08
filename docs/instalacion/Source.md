@@ -9,6 +9,11 @@ title: Vincular el Archivo Source de la api
 Para poder ver el código fuente de las clases de la api es necesario vincular
 el archivo source a la api en el `Build Path` del proyecto.
 
+::: tip Nota:
+Recuerda descargar el proyecto de la Api Personalizada en [Github](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada) para poder 
+vincularle el source.
+:::
+
 ## Eclipse IDE
 
 En Eclipse IDE se siguen los siguientes pasos:

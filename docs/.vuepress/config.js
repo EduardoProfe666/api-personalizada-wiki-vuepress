@@ -35,7 +35,11 @@ export default {
     repo: "EduardoProfe666/Proyecto-Api-Personalizada",
     repoLabel: "👾Proyecto Api Personalizada👾",
     editLink: true,
-    editLinkText: "Editar página de documentación",
+    editLinkPattern: 'https://github.com/EduardoProfe666/api-personalizada-wiki-vuepress/edit/:branch/:path',
+    editLinkText: 'Editar Documentación',
+    contributorsText: 'Contribuyentes',
+    docsDir: 'docs',
+    lastUpdatedText: 'Última actualización',
     searchPlaceholder: "Buscar...",
     lastUpdated: true,
     logo: "/icons/favicon.png",
@@ -52,6 +56,9 @@ export default {
           { text: "Componentes de la Lógica", link: "/comp-logic/" },
         ],
       },
+      {
+        text: 'Historial de cambios', link: 'https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/blob/main/CHANGELOG.md', target:'_blank', rel:false
+      }
     ],
     sidebar: {
       "/instalacion/": [
@@ -143,6 +150,7 @@ export default {
    */
   plugins: [
     "@vuepress/plugin-back-to-top",
+    "@vuepress-plugin-clean-urls",
     "@vuepress/plugin-medium-zoom",
     "@vuepress/plugin-nprogress",
     searchPlugin({

@@ -6,13 +6,13 @@ title: Importación de la api
 
 # Importación de la api
 
-Una vez descargada la `api/apiLite.jar` es necesario vincularla al proyecto.
+Una vez descargada la `api.jar` es necesario vincularla al proyecto.
 
 ## Eclipse IDE
 
 En Eclipse IDE se siguen los siguientes pasos:
 
-1. Copiar el fichero `api/apiLite.jar` en el proyecto que se va a emplear.
+1. Copiar el fichero `api.jar` en el proyecto que se va a emplear.
 2. Agregar la biblioteca al `Build Path` del proyecto en cuestión.
 3. Usar la biblioteca ;).
 

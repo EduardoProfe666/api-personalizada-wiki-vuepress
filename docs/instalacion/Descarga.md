@@ -27,13 +27,12 @@ Este método sigue los siguientes pasos:
 
 ## Google Drive
 
-Este método permite descargar la api (`.jar`) en ambas versiones (`estándar` y `lite`), junto con las documentaciones (`JavaDoc`)
-de ambas versiones, pero sin el código fuente.
+Este método permite descargar la api (`.jar`), junto con las documentaciones (`JavaDoc`), pero sin el código fuente.
 
 Este método sigue los siguientes pasos:
 
-1. Sigue este [enlace](https://drive.google.com/file/d/194eeuu4QhYpQj8gkoJ0_NuF5BbtkVAVs/view?usp=sharing) si quieres descargar la versión `estándar`, o este [enlace](https://drive.google.com/file/d/1X2FFDOlaKBD1-La_shhLjDKlPHXlY9lr/view?usp=sharing) si quieres descargar la versión `lite`.
-2. Descarga el archivo `.rar` o los elementos dentro: `api/apiLite.jar` y `apiDoc/apiLiteDoc.rar`
+1. Sigue este [enlace](https://drive.google.com/file/d/176cxLM6BuagyLXFVW3kDPdDEmtLq-nRg/view?usp=drive_link) si quieres descargar la versión `estándar`.
+2. Descarga el archivo `.rar` o los elementos dentro: `api/api.jar` y `apiDoc/apiDoc.rar`
 
 ::: tip Nota:
 Recuerda tener una cuenta de Google en tu dispositivo para facilitar la descarga.

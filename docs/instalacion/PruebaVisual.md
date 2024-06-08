@@ -24,28 +24,42 @@ Para acceder a ella siga los siguientes pasos:
 
 Actualmente la prueba visual de la api cuenta con los siguientes módulos:
 
-- 🌌 `AvatarCircular`
-- 🌌 `BotonAnimacion`
-- 🌌 `Imagen`
-- 🌌 `ImagenAnimada`
-- 🌌 **PanelesGradientes** (Prueba visual de `PanelGradiente`,  
+- 🚀 `AvatarCircular`
+- 🚀 `BotonAnimacion`
+- 🚀 `Imagen`
+- 🚀 `ImagenAnimada`
+- 🚀 **PanelesGradientes** (Prueba visual de `PanelGradiente`,  
   `PanelGradienteV` y `PanelGradienteH`)
-- 🌌 `PanelAnimacionCurvas`
-- 🌌 `PanelBordeOval`
-- 🌌 **Texto 1** (Prueba Visual de `JTextFieldModificado` y `CampoCIValidado`)
-- 🌌 **Texto 2** (Prueba Visual de `JLabelHora` y `JLabelAnimacion`)
-- 🌌 **Texto 3** (Prueba Visual de `JLabelMultilineaMultialineado`)
-- 🌌 `Notificaciones`
-- 🌌 `Lineas`
-- 🌌 **Ordenamiento** (Prueba de algoritmos de `Ordenamiento`)
-- 🌌 **Busqueda** (Prueba de algoritmos de `Busqueda`)
-- 🌌 `RelojAnalogico`
-- 🌌 `CarruselImagenes`
-- 🤖 `NotificacionesModernas`
-- 🌌 **Utilidades-Modelos** (Prueba Visual de `ModeloPrincipalTableModel` y 🤖 `ManejadorLookAndFeels`)
+- 🚀 `PanelAnimacionCurvas`
+- 🚀 `PanelBordeOval`
+- 🚀 **Texto 1** (Prueba Visual de `JTextFieldModificado` y `CampoCIValidado`)
+- 🚀 **Texto 2** (Prueba Visual de `JLabelHora` y `JLabelAnimacion`)
+- 🚀 **Texto 3** (Prueba Visual de `JLabelMultilineaMultialineado`)
+- 🚀 `Notificaciones`
+- 🚀 `Lineas`
+- ⚓️ **Ordenamiento** (Prueba de algoritmos de `Ordenamiento`)
+- ⚓️ **Busqueda** (Prueba de algoritmos de `Busqueda`)
+- 🚀 `RelojAnalogico`
+- 🚀 `CarruselImagenes`
+- 🚀 `NotificacionesModernas`
+- 🚀 `Pagination`
+- 🚀 `ImagenFBR`
+- 🚀 `Drawer`
+- 🚀 `SpinnerProgress`
+- 🚀 `GaugeChart`
+- 🚀 `PieChart`
+- 🚀  **Charts** (Prueba visual de `HorizontalBarChart`,  
+  `raven.chart.pie.PieChart` y `LineChart`)
+- 🚀 `GlassPanePopup`
+- 🚀  **Calendario Win10** (Prueba Visual de `Calendar`)
+- 🚀 `TimePicker`
+- 🚀 `DatePicker`
+- 🚀 **Modelos** (Prueba Visual de `ModeloPrincipalTableModel`)
+- ⚓️ **Generadores** (Prueba Visual de utilidades `GeneradorCICubano`, `GeneradorContraseñas` y `GeneradorNombres`)
+- 🚀 **Utilidades Interfaz** (Prueba Visual de `ManejadorLookAndFeels` y `AuxiliaresVisuales.ajustarImagen()`)
 
 ::: tip Leyenda:
 
-- 🌌 Disponible tanto en la versión estándar como en la lite.
-- 🤖 Disponible solamente en la versión estándar.
+- 🚀 Secciones de pruebas de componentes de interfaz.
+- ⚓️ Secciones de pruebas de componenetes de lógica.
   :::
