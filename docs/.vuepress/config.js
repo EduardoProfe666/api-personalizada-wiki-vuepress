@@ -39,6 +39,7 @@ export default {
     searchPlaceholder: "Buscar...",
     lastUpdated: true,
     logo: "/icons/favicon.png",
+    smoothScroll: true,
     navbar: [
       {
         text: "Instalación",
