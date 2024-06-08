@@ -15,11 +15,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build VuePress site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: docs/.vuepress/dist
         env:
-          ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
-          TARGET_REPO: EduardoProfe666/api-personalizada-wiki-vuepress # Reemplaza esto con el nombre de usuario y el nombre del repositorio objetivo
-          TARGET_BRANCH: gh-pages # Cambia esto si deseas desplegar en otra rama
-          BUILD_SCRIPT: yarn && yarn build
-          BUILD_DIR: blog/.vuepress/dist/
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
