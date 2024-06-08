@@ -85,7 +85,7 @@ export default {
                     children: [
                         "/comp-vis/README.md",
                         {
-                            text: "Api Interna",
+                            text: "Componentes Propios",
                             children: [
                                 "AvatarCircular",
                                 "BotonAnimacion",
@@ -110,7 +110,7 @@ export default {
                             ]
                         },
                         {
-                            text: "Api Externa",
+                            text: "Componentes Externos",
                             children: []
                         },
 
