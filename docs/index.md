@@ -10,7 +10,7 @@ actions:
   - text: Componentes Visuales
     link: /comp-vis/
     type: secondary
-  - text: Lógica
+  - text: Utilidades
     link: /comp-logic/
     type: secondary
 features:

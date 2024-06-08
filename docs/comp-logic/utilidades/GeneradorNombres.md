@@ -8,12 +8,6 @@ title: GeneradorNombres
 
 Clase de utilidades que permite la generación de nombres femeninos y masculinos, sus respectivos apellidos, y otras funcionalidades.
 
-::: danger Importante:
-La clase presenta un [bug]() a la hora de cargar los ficheros de piscinas de datos. Para evitar esto se deben copiar [los siguientes archivos](#piscinas-de-datos) en el proyecto
-de tal forma que se encuentren en la ruta `src/utilidades/nombres/`.
-Se deben crear las carpetas necesarias para lograr esto (`utilidades` y `nombres`)
-:::
-
 El acceso a estos métodos es de manera estática. Por ejemplo:
 
 ```java
@@ -183,11 +177,7 @@ Las complejidades actualmente soportadas son:
 ```java
 public final class GeneradorNombres {
 	private GeneradorNombres(){}
-
-	private static List<String> nombres_femeninos = inicializar_nombres_femeninos();
-	private static List<String> nombres_masculinos = inicializar_nombres_masculinos();
-	private static List<String> apellidos = inicializar_apellidos();
-
+	
 	public static final int cantNombresFemeninos = 2001;
 
 	public static final int cantNombresMasculinos = 1599;
@@ -196,72 +186,29 @@ public final class GeneradorNombres {
 
 	public static final int cantApellidos = 4908;
 
-	private static List<String> inicializar_nombres_femeninos(){
-		List<String> nombres = new ArrayList<String>();
-		File f = new File("src/utilidades/nombres/nombres_femeninos.txt");
-		try(Scanner sc = new Scanner(f)){
-			while(sc.hasNext()){
-				nombres.add(sc.nextLine());
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return nombres;
-
-	}
-	private static List<String> inicializar_nombres_masculinos(){
-		List<String> nombres = new ArrayList<String>();
-		File f = new File("src/utilidades/nombres/nombres_masculinos.txt");
-		try(Scanner sc = new Scanner(f)){
-			while(sc.hasNext()){
-				nombres.add(sc.nextLine());
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return nombres;
-
-	}
-	private static List<String> inicializar_apellidos(){
-		List<String> apellidos = new ArrayList<String>();
-		File f = new File("src/utilidades/nombres/apellidos.txt");
-		try(Scanner sc = new Scanner(f)){
-			while(sc.hasNext()){
-				apellidos.add(sc.nextLine());
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return apellidos;
-	}
-
+	
 	public static List<String> generarNombres(Sexo sexo) {
 		List<String> s = new ArrayList<>();
 		switch (sexo) {
 		case FEMENINO:
-			s.addAll(nombres_femeninos);
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_FEMENINOS));
 			break;
 		case MASCULINO:
-			s.addAll(nombres_masculinos);
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_MASCULINOS));
 			break;
 		case ALEATORIO:
-			s.addAll(nombres_femeninos);
-			s.addAll(nombres_masculinos);
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_FEMENINOS));
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_MASCULINOS));
 			break;
 		default:
 			throw new IllegalArgumentException("Parametros erroneos");
 		}
 		Collections.sort(s);
-
+		
 		return s;
 	}
-
+	
+	
 	public static List<String> generarNombres(int cantidad, Sexo sexo){
 		List<String> s = generarNombres(sexo);
 		Collections.shuffle(s);
@@ -269,11 +216,11 @@ public final class GeneradorNombres {
 		Collections.sort(s);
 		return s;
 	}
-
+	
 	public static List<String> generarApellidos() {
-		return new ArrayList<String>(apellidos);
+		return new ArrayList<String>(Arrays.asList(ProveedorApellidos.APELLIDOS));
 	}
-
+	
 	public static List<String> generarApellidos(int cantidad) {
 		List<String> s = generarApellidos();
 		Collections.shuffle(s);
@@ -281,20 +228,20 @@ public final class GeneradorNombres {
 		Collections.sort(s);
 		return s;
 	}
-
+	
 	public static String generarNombre(Sexo sexo, Complejidad complejidad) {
 		List<String> s = new ArrayList<String>();
 		String respuesta;
 		switch(sexo){
 		case FEMENINO:
-			s.addAll(nombres_femeninos);
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_FEMENINOS));
 			break;
 		case MASCULINO:
-			s.addAll(nombres_masculinos);
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_MASCULINOS));
 			break;
 		case ALEATORIO:
-			s.addAll(nombres_masculinos);
-			s.addAll(nombres_femeninos);
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_MASCULINOS));
+			s.addAll(Arrays.asList(ProveedorNombres.NOMBRES_FEMENINOS));
 			break;
 		default:
 			throw new RuntimeException("Sexo NULL");
@@ -316,22 +263,22 @@ public final class GeneradorNombres {
 	public static String generarApellido(Complejidad complejidad) {
 		String s;
 		if(complejidad.equals(Complejidad.ALEATORIA)){
-			s = apellidos.get(new Random().nextInt(apellidos.size()));
+			s = ProveedorApellidos.APELLIDOS[new Random().nextInt(ProveedorApellidos.APELLIDOS.length)];
 			if(new Random().nextBoolean())
-				s+=" "+apellidos.get(new Random().nextInt(apellidos.size()));
+				s+=" "+ProveedorApellidos.APELLIDOS[new Random().nextInt(ProveedorApellidos.APELLIDOS.length)];
 		}
 		else{
-			s = apellidos.get(new Random().nextInt(apellidos.size()));
+			s = ProveedorApellidos.APELLIDOS[new Random().nextInt(ProveedorApellidos.APELLIDOS.length)];
 			if(complejidad.equals(Complejidad.COMPUESTA))
-				s+=" "+apellidos.get(new Random().nextInt(apellidos.size()));
+				s+=" "+ProveedorApellidos.APELLIDOS[new Random().nextInt(ProveedorApellidos.APELLIDOS.length)];
 		}
 		return s;
 	}
-
+	
 	public static String generarNombreYApellidos(Sexo sexo, Complejidad complejidadNombre, Complejidad complejidadApellido){
 		return generarNombre(sexo, complejidadNombre)+" "+generarApellido(complejidadApellido);
 	}
-
+	
 	public static List<String> generarListadoNombreYApellidos(int cantidad, Sexo sexo,Complejidad complejidadNombre, Complejidad complejidadApellido){
 		List<String> s = new ArrayList<String>();
 		for(int i=0;i<cantidad;i++){
@@ -339,7 +286,7 @@ public final class GeneradorNombres {
 		}
 		return s;
 	}
-
+	
 	public static void generarInformeListadoNombreYApellidos(int cantidad, Sexo sexo,Complejidad complejidadNombre, Complejidad complejidadApellido){
 		File f = new File("Listado_Nombre_y_Apellidos_Generados.txt");
 		f.delete();
@@ -356,26 +303,16 @@ public final class GeneradorNombres {
 			e.printStackTrace();
 		}
 		System.out.println("Ruta del archivo generado: "+System.getProperty("user.dir")+"/Listado_Nombre_y_Apellidos_Generados.txt");
-
+		
 	}
 
-	public static enum Sexo{
-
-		FEMENINO,
-
-		MASCULINO,
-
-		ALEATORIO
-	}
 
 	public static enum Complejidad {
-
 		SIMPLE,
-
 		COMPUESTA,
-
 		ALEATORIA
 	}
+
 }
 ```
 

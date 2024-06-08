@@ -74,7 +74,7 @@ Date fechaNacimiento = Auxiliares.convertirFechaNacimientoCiDate(ci);
   > int  dif = Auxiliares.determinarDiferenciaAnyos(d1,d2);
   > ```
 
-### Determinar sexo dado un CI en forma de char
+### Determinar sexo en forma de char dado un CI 
 
 - **Arquetipo:** `determinarSexo(String)`
 - **Parámetros:** `String` carnet de identidad cubano.
@@ -89,7 +89,7 @@ Date fechaNacimiento = Auxiliares.convertirFechaNacimientoCiDate(ci);
   > char sexoChar = Auxiliares.determinarSexo(ci);
   > ```
 
-### Determinar sexo dado un CI en forma de String
+### Determinar sexo en forma de String dado un CI
 
 - **Arquetipo:** `determinarSexoString(String)`
 - **Parámetros:** `String` carnet de identidad cubano.
@@ -100,7 +100,8 @@ Date fechaNacimiento = Auxiliares.convertirFechaNacimientoCiDate(ci);
 - > **Ejemplo de uso:**
   >
   > ```java
-  >
+  > String ci = "05112568423";
+  > String sexoString = Auxiliares.determinarSexoString(ci);
   > ```
 
 ### Sumar años al `Date` dado

@@ -70,71 +70,43 @@ Los métodos implementados son:
 
 Los Looks and Feels disponibles son:
 
-- `PREDETERMINADO` o **Metal** = -1;
+- `PREDETERMINADO` (**Metal**) = -1;
 - `NIMBUS` = 0;
-- `WINDOWS` = 1;
-- `WINDOWS_CLASSIC` = 2;
-- `CDE_MOTIF` = 3;
 - **FlatLaf**
-  - `FLATLAF_LIGHT` = 4;
-  - `FLATLAF_DARK` = 5;
-  - `FLATLAF_DARCULA` = 6;
-  - `FLATLAF_ARC` = 7;
-  - `FLATLAF_ARC_ORANGE` = 8;
-  - `FLATLAF_ARC_DARK` = 9;
-  - `FLATLAF_ARC_DARK_ORANGE` = 10;
-  - `FLATLAF_CARBON` = 11;
-  - `FLATLAF_COBALT2` = 12;
-  - `FLATLAF_CYAN_LIGHT` = 13;
-  - `FLATLAF_DARK_FLAT` = 14;
-  - `FLATLAF_DARK_PURPLE` = 15;
-  - `FLATLAF_DRACULA` = 16;
-  - `FLATLAF_GRADIANTO_DARK_FUCHSIA` = 17;
-  - `FLATLAF_GRADIANTO_DEEP_OCEAN` = 18;
-  - `FLATLAF_MIDNIGHT_BLUE` = 19;
-  - `FLATLAF_NATURE_GREEN` = 20;
-  - `FLATLAF_GRAY` = 21;
-  - `FLATLAF_GRUVBOX_DARK_HARD` = 22;
-  - `FLATLAF_GRUVBOX_DARK_MEDIUM` = 23;
-  - `FLATLAF_GRUVBOX_DARK_SOFT` = 24;
-  - `FLATLAF_HIBERBEE_DARK` = 25;
-  - `FLATLAF_HIGH_CONTRAST` = 26;
-  - `FLATLAF_LIGHT_FLAT` = 27;
-  - `FLATLAF_MATERIAL_DESIGN_DARK` = 28;
-  - `FLATLAF_MONOCAI` = 29;
-  - `FLATLAF_MONOKAI_PRO` = 30;
-  - `FLATLAF_NORD` = 31;
-  - `FLATLAF_ONE_DARK` = 32;
-  - `FLATLAF_SOLARIZED_DARK` = 33;
-  - `FLATLAF_SOLARIZED_LIGHT` = 34;
-  - `FLATLAF_SPACEGRAY` = 35;
-  - `FLATLAF_VUESION` = 36;
-  - `FLATLAF_XCODE_GRAY` = 37;
-- **JTattoo**
-  - `JTATTOO_ACRYL` = 38;
-  - `JTATTOO_AERO` = 39;
-  - `JTATTOO_ALUMINIUM` = 40;
-  - `JTATTOO_BERNSTEIN` = 41;
-  - `JTATTOO_FAST` = 42;
-  - `JTATTOO_GRAPHITE` = 43;
-  - `JTATTOO_LUNA` = 44;
-  - `JTATTOO_MCWIN` = 45;
-  - `JTATTOO_MINT` = 46;
-  - `JTATTOO_NOIRE` = 47;
-  - `JTATTOO_SMART` = 48;
-  - `JTATTOO_TEXTURE` = 49;
-- **Liquid**
-  - `LIQUID` = 50;
-- **Nimrod**
-  - `NIMROD` = 51;
-- **Tiny**
-  - `TINY` = 52;
-- **Tonic**
-  - `TONIC` = 53;
-- **JGoodies**
-  - `PLASTIC` = 54;
-  - `PLASTIC3D` = 55;
-  - `WINDOWS_JGOODIES` = 56;
+  - `FLATLAF_LIGHT` = 1;
+  - `FLATLAF_DARK` = 2;
+  - `FLATLAF_DARCULA` = 3;
+  - `FLATLAF_ARC` = 4;
+  - `FLATLAF_ARC_ORANGE` = 5;
+  - `FLATLAF_ARC_DARK` = 6;
+  - `FLATLAF_ARC_DARK_ORANGE` = 7;
+  - `FLATLAF_CARBON` = 8;
+  - `FLATLAF_COBALT2` = 9;
+  - `FLATLAF_CYAN_LIGHT` = 10;
+  - `FLATLAF_DARK_FLAT` = 11;
+  - `FLATLAF_DARK_PURPLE` = 12;
+  - `FLATLAF_DRACULA` = 13;
+  - `FLATLAF_GRADIANTO_DARK_FUCHSIA` = 14;
+  - `FLATLAF_GRADIANTO_DEEP_OCEAN` = 15;
+  - `FLATLAF_MIDNIGHT_BLUE` = 16;
+  - `FLATLAF_NATURE_GREEN` = 17;
+  - `FLATLAF_GRAY` = 18;
+  - `FLATLAF_GRUVBOX_DARK_HARD` = 19;
+  - `FLATLAF_GRUVBOX_DARK_MEDIUM` = 20;
+  - `FLATLAF_GRUVBOX_DARK_SOFT` = 21;
+  - `FLATLAF_HIBERBEE_DARK` = 22;
+  - `FLATLAF_HIGH_CONTRAST` = 23;
+  - `FLATLAF_LIGHT_FLAT` = 24;
+  - `FLATLAF_MATERIAL_DESIGN_DARK` = 25;
+  - `FLATLAF_MONOCAI` = 26;
+  - `FLATLAF_MONOKAI_PRO` = 27;
+  - `FLATLAF_NORD` = 28;
+  - `FLATLAF_ONE_DARK` = 29;
+  - `FLATLAF_SOLARIZED_DARK` = 30;
+  - `FLATLAF_SOLARIZED_LIGHT` = 31;
+  - `FLATLAF_SPACEGRAY` = 32;
+  - `FLATLAF_VUESION` = 33;
+  - `FLATLAF_XCODE_GRAY` = 34;
 
 ## Prueba Visual
 
@@ -152,70 +124,42 @@ public final class ManejadorLookAndFeels {
 	//Predeterminados
 	public static final int PREDETERMINADO = -1;
 	public static final int NIMBUS = 0;
-	public static final int WINDOWS = 1;
-	public static final int WINDOWS_CLASSIC = 2;
-	public static final int CDE_MOTIF = 3;
 	//FlatLaf
-	public static final int FLATLAF_LIGHT = 4;
-	public static final int FLATLAF_DARK = 5;
-	public static final int FLATLAF_DARCULA = 6;
-	public static final int FLATLAF_ARC = 7;
-	public static final int FLATLAF_ARC_ORANGE = 8;
-	public static final int FLATLAF_ARC_DARK = 9;
-	public static final int FLATLAF_ARC_DARK_ORANGE = 10;
-	public static final int FLATLAF_CARBON = 11;
-	public static final int FLATLAF_COBALT2 = 12;
-	public static final int FLATLAF_CYAN_LIGHT = 13;
-	public static final int FLATLAF_DARK_FLAT = 14;
-	public static final int FLATLAF_DARK_PURPLE = 15;
-	public static final int FLATLAF_DRACULA = 16;
-	public static final int FLATLAF_GRADIANTO_DARK_FUCHSIA = 17;
-	public static final int FLATLAF_GRADIANTO_DEEP_OCEAN = 18;
-	public static final int FLATLAF_MIDNIGHT_BLUE = 19;
-	public static final int FLATLAF_NATURE_GREEN = 20;
-	public static final int FLATLAF_GRAY = 21;
-	public static final int FLATLAF_GRUVBOX_DARK_HARD = 22;
-	public static final int FLATLAF_GRUVBOX_DARK_MEDIUM = 23;
-	public static final int FLATLAF_GRUVBOX_DARK_SOFT = 24;
-	public static final int FLATLAF_HIBERBEE_DARK = 25;
-	public static final int FLATLAF_HIGH_CONTRAST = 26;
-	public static final int FLATLAF_LIGHT_FLAT = 27;
-	public static final int FLATLAF_MATERIAL_DESIGN_DARK = 28;
-	public static final int FLATLAF_MONOCAI = 29;
-	public static final int FLATLAF_MONOKAI_PRO = 30;
-	public static final int FLATLAF_NORD = 31;
-	public static final int FLATLAF_ONE_DARK = 32;
-	public static final int FLATLAF_SOLARIZED_DARK = 33;
-	public static final int FLATLAF_SOLARIZED_LIGHT = 34;
-	public static final int FLATLAF_SPACEGRAY = 35;
-	public static final int FLATLAF_VUESION = 36;
-	public static final int FLATLAF_XCODE_GRAY = 37;
-	//JTattoo
-	public static final int JTATTOO_ACRYL = 38;
-	public static final int JTATTOO_AERO = 39;
-	public static final int JTATTOO_ALUMINIUM = 40;
-	public static final int JTATTOO_BERNSTEIN = 41;
-	public static final int JTATTOO_FAST = 42;
-	public static final int JTATTOO_GRAPHITE = 43;
-	public static final int JTATTOO_LUNA = 44;
-	public static final int JTATTOO_MCWIN = 45;
-	public static final int JTATTOO_MINT = 46;
-	public static final int JTATTOO_NOIRE = 47;
-	public static final int JTATTOO_SMART = 48;
-	public static final int JTATTOO_TEXTURE = 49;
-	//Liquid
-	public static final int LIQUID = 50;
-	//Nimrod
-	public static final int NIMROD = 51;
-	//Tiny
-	public static final int TINY = 52;
-	//Tonic
-	public static final int TONIC = 53;
-	//JGoodies
-	public static final int PLASTIC = 54;
-	public static final int PLASTIC3D = 55;
-	public static final int WINDOWS_JGOODIES = 56;
-
+	public static final int FLATLAF_LIGHT = 1;
+	public static final int FLATLAF_DARK = 2;
+	public static final int FLATLAF_DARCULA = 3;
+	public static final int FLATLAF_ARC = 4;
+	public static final int FLATLAF_ARC_ORANGE = 5;
+	public static final int FLATLAF_ARC_DARK = 6;
+	public static final int FLATLAF_ARC_DARK_ORANGE = 7;
+	public static final int FLATLAF_CARBON = 8;
+	public static final int FLATLAF_COBALT2 = 9;
+	public static final int FLATLAF_CYAN_LIGHT = 10;
+	public static final int FLATLAF_DARK_FLAT = 11;
+	public static final int FLATLAF_DARK_PURPLE = 12;
+	public static final int FLATLAF_DRACULA = 13;
+	public static final int FLATLAF_GRADIANTO_DARK_FUCHSIA = 14;
+	public static final int FLATLAF_GRADIANTO_DEEP_OCEAN = 15;
+	public static final int FLATLAF_MIDNIGHT_BLUE = 16;
+	public static final int FLATLAF_NATURE_GREEN = 17;
+	public static final int FLATLAF_GRAY = 18;
+	public static final int FLATLAF_GRUVBOX_DARK_HARD = 19;
+	public static final int FLATLAF_GRUVBOX_DARK_MEDIUM = 20;
+	public static final int FLATLAF_GRUVBOX_DARK_SOFT = 21;
+	public static final int FLATLAF_HIBERBEE_DARK = 22;
+	public static final int FLATLAF_HIGH_CONTRAST = 23;
+	public static final int FLATLAF_LIGHT_FLAT = 24;
+	public static final int FLATLAF_MATERIAL_DESIGN_DARK = 25;
+	public static final int FLATLAF_MONOCAI = 26;
+	public static final int FLATLAF_MONOKAI_PRO = 27;
+	public static final int FLATLAF_NORD = 28;
+	public static final int FLATLAF_ONE_DARK = 29;
+	public static final int FLATLAF_SOLARIZED_DARK = 30;
+	public static final int FLATLAF_SOLARIZED_LIGHT = 31;
+	public static final int FLATLAF_SPACEGRAY = 32;
+	public static final int FLATLAF_VUESION = 33;
+	public static final int FLATLAF_XCODE_GRAY = 34;
+	
 	public static void setLookAndFeel(int lookAndFeel) throws UnsupportedLookAndFeelException{
 		switch(lookAndFeel){
 		case -1:
@@ -225,177 +169,111 @@ public final class ManejadorLookAndFeels {
 			UIManager.setLookAndFeel(new NimbusLookAndFeel());
 			break;
 		case 1:
-			UIManager.setLookAndFeel(new WindowsLookAndFeel());
-			break;
-		case 2:
-			UIManager.setLookAndFeel(new WindowsClassicLookAndFeel());
-			break;
-		case 3:
-			UIManager.setLookAndFeel(new MotifLookAndFeel());
-			break;
-		case 4:
 			FlatLightLaf.setup();
-			break;
-		case 5:
+			break;	 
+		case 2:
 			FlatDarkLaf.setup();
 			break;
-		case 6:
+		case 3:
 			FlatDarculaLaf.setup();
 			break;
-		case 7:
+		case 4:
 			FlatArcIJTheme.setup();
 			break;
-		case 8:
+		case 5:
 			FlatArcOrangeIJTheme.setup();
 			break;
-		case 9:
+		case 6:
 			FlatArcDarkIJTheme.setup();
-		case 10:
+		case 7:
 			FlatArcDarkOrangeIJTheme.setup();
 			break;
-		case 11:
+		case 8:
 			FlatCarbonIJTheme.setup();
 			break;
-		case 12:
+		case 9:
 			FlatCobalt2IJTheme.setup();
 			break;
-		case 13:
+		case 10:
 			FlatCyanLightIJTheme.setup();
 			break;
-		case 14:
+		case 11:
 			FlatDarkFlatIJTheme.setup();
 			break;
-		case 15:
+		case 12:
 			FlatDarkPurpleIJTheme.setup();
 			break;
-		case 16:
+		case 13:
 			FlatDraculaIJTheme.setup();
 			break;
-		case 17:
+		case 14:
 			FlatGradiantoDarkFuchsiaIJTheme.setup();
 			break;
-		case 18:
+		case 15:
 			FlatGradiantoDeepOceanIJTheme.setup();
 			break;
-		case 19:
+		case 16:
 			FlatGradiantoMidnightBlueIJTheme.setup();
 			break;
-		case 20:
+		case 17:
 			FlatGradiantoNatureGreenIJTheme.setup();
 			break;
-		case 21:
+		case 18:
 			FlatGrayIJTheme.setup();
 			break;
-		case 22:
+		case 19:
 			FlatGruvboxDarkHardIJTheme.setup();
 			break;
-		case 23:
+		case 20:
 			FlatGruvboxDarkMediumIJTheme.setup();
 			break;
-		case 24:
+		case 21:
 			FlatGruvboxDarkSoftIJTheme.setup();
 			break;
-		case 25:
+		case 22:
 			FlatHiberbeeDarkIJTheme.setup();
 			break;
-		case 26:
+		case 23:
 			FlatHighContrastIJTheme.setup();
 			break;
-		case 27:
+		case 24:
 			FlatLightFlatIJTheme.setup();
 			break;
-		case 28:
+		case 25:
 			FlatMaterialDesignDarkIJTheme.setup();
 			break;
-		case 29:
+		case 26:
 			FlatMonocaiIJTheme.setup();
 			break;
-		case 30:
+		case 27:
 			FlatMonokaiProIJTheme.setup();
 			break;
-		case 31:
+		case 28:
 			FlatNordIJTheme.setup();
 			break;
-		case 32:
+		case 29:
 			FlatOneDarkIJTheme.setup();
 			break;
-		case 33:
+		case 30:
 			FlatSolarizedDarkIJTheme.setup();
 			break;
-		case 34:
+		case 31:
 			FlatSolarizedLightIJTheme.setup();
 			break;
-		case 35:
+		case 32:
 			FlatSpacegrayIJTheme.setup();
 			break;
-		case 36:
+		case 33:
 			FlatVuesionIJTheme.setup();
 			break;
-		case 37:
+		case 34:
 			FlatXcodeDarkIJTheme.setup();
-			break;
-		case 38:
-			UIManager.setLookAndFeel(new AcrylLookAndFeel());
-			break;
-		case 39:
-			UIManager.setLookAndFeel(new AeroLookAndFeel());
-			break;
-		case 40:
-			UIManager.setLookAndFeel(new AluminiumLookAndFeel());
-			break;
-		case 41:
-			UIManager.setLookAndFeel(new BernsteinLookAndFeel());
-			break;
-		case 42:
-			UIManager.setLookAndFeel(new FastLookAndFeel());
-			break;
-		case 43:
-			UIManager.setLookAndFeel(new GraphiteLookAndFeel());
-			break;
-		case 44:
-			UIManager.setLookAndFeel(new LunaLookAndFeel());
-			break;
-		case 45:
-			UIManager.setLookAndFeel(new McWinLookAndFeel());
-			break;
-		case 46:
-			UIManager.setLookAndFeel(new MintLookAndFeel());
-			break;
-		case 47:
-			UIManager.setLookAndFeel(new NoireLookAndFeel());
-			break;
-		case 48:
-			UIManager.setLookAndFeel(new SmartLookAndFeel());
-			break;
-		case 49:
-			UIManager.setLookAndFeel(new TextureLookAndFeel());
-			break;
-		case 50:
-			UIManager.setLookAndFeel(new LiquidLookAndFeel());
-			break;
-		case 51:
-			UIManager.setLookAndFeel(new NimRODLookAndFeel());
-			break;
-		case 52:
-			UIManager.setLookAndFeel(new TinyLookAndFeel());
-			break;
-		case 53:
-			UIManager.setLookAndFeel(new TonicLookAndFeel());
-			break;
-		case 54:
-			UIManager.setLookAndFeel(new PlasticLookAndFeel());
-			break;
-		case 55:
-			UIManager.setLookAndFeel(new Plastic3DLookAndFeel());
-			break;
-		case 56:
-			UIManager.setLookAndFeel(new com.jgoodies.looks.windows.WindowsLookAndFeel());
 			break;
 		default:
 			throw new IllegalArgumentException("Debe elegir un lookAndFeel correcto");
 		}
 	}
-
+	
 	public static void setLookAndFeelDinamico(int lookAndFeel, Component c) throws UnsupportedLookAndFeelException{
 		setLookAndFeel(lookAndFeel);
 		SwingUtilities.updateComponentTreeUI(c);
@@ -406,13 +284,14 @@ public final class ManejadorLookAndFeels {
 ## Clases utilizadas (Importaciones)
 
 ```java
+import java.awt.Component;
+
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
-import com.birosoft.liquid.LiquidLookAndFeel;
-import com.digitprop.tonic.TonicLookAndFeel;
+
 import com.formdev.flatlaf.FlatDarculaLaf;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
@@ -447,23 +326,4 @@ import com.formdev.flatlaf.intellijthemes.FlatSolarizedLightIJTheme;
 import com.formdev.flatlaf.intellijthemes.FlatSpacegrayIJTheme;
 import com.formdev.flatlaf.intellijthemes.FlatVuesionIJTheme;
 import com.formdev.flatlaf.intellijthemes.FlatXcodeDarkIJTheme;
-import com.jgoodies.looks.plastic.Plastic3DLookAndFeel;
-import com.jgoodies.looks.plastic.PlasticLookAndFeel;
-import com.jtattoo.plaf.acryl.AcrylLookAndFeel;
-import com.jtattoo.plaf.aero.AeroLookAndFeel;
-import com.jtattoo.plaf.aluminium.AluminiumLookAndFeel;
-import com.jtattoo.plaf.bernstein.BernsteinLookAndFeel;
-import com.jtattoo.plaf.fast.FastLookAndFeel;
-import com.jtattoo.plaf.graphite.GraphiteLookAndFeel;
-import com.jtattoo.plaf.luna.LunaLookAndFeel;
-import com.jtattoo.plaf.mcwin.McWinLookAndFeel;
-import com.jtattoo.plaf.mint.MintLookAndFeel;
-import com.jtattoo.plaf.noire.NoireLookAndFeel;
-import com.jtattoo.plaf.smart.SmartLookAndFeel;
-import com.jtattoo.plaf.texture.TextureLookAndFeel;
-import com.nilo.plaf.nimrod.NimRODLookAndFeel;
-import com.sun.java.swing.plaf.motif.MotifLookAndFeel;
-import com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel;
-import com.sun.java.swing.plaf.windows.WindowsLookAndFeel;
-import de.muntjak.tinylookandfeel.TinyLookAndFeel;
 ```

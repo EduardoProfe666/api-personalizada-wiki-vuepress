@@ -1,10 +1,10 @@
 ---
-title: Página Inicial de Lógica
+title: Página Inicial de Utilidades
 ---
 
 ![a](/images/banner.png)
 
-# Página Inicial de Lógica
+# Página Inicial de Utilidades
 
 La presente wiki fue redactada para comprender el uso de la [api personalizada](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada).
 

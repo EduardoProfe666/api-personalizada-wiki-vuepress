@@ -50,11 +50,12 @@ export default {
         link: "/instalacion/",
       },
       {
-        text: "Componentes",
-        children: [
-          { text: "Componentes Visuales", link: "/comp-vis/" },
-          { text: "Componentes de la Lógica", link: "/comp-logic/" },
-        ],
+        text: "Componentes Visuales",
+        link: "/comp-vis/",
+      },
+      {
+        text: "Utilidades",
+        link: "/comp-logic/"
       },
       {
         text: 'Historial de cambios', link: 'https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/blob/main/CHANGELOG.md', target:'_blank', rel:false
@@ -108,16 +109,21 @@ export default {
           children: [
             "/comp-logic/README.md",
             {
-              text: "Utilidades",
+              text: "Utilidades de Interfaz",
+              children: [
+                "/comp-logic/utilidades/AuxiliaresVisuales.md",
+                "/comp-logic/utilidades/ManejadorLookAndFeels.md",
+              ],
+            },
+            {
+              text: "Utilidades de Lógica",
               children: [
                 "/comp-logic/utilidades/Auxiliares.md",
-                "/comp-logic/utilidades/AuxiliaresVisuales.md",
                 "/comp-logic/utilidades/GeneradorCICubano.md",
                 "/comp-logic/utilidades/GeneradorContrasenas.md",
                 "/comp-logic/utilidades/GeneradorNombres.md",
-                "/comp-logic/utilidades/ManejadorLookAndFeels.md",
                 "/comp-logic/utilidades/Validaciones.md",
-              ],
+              ]
             },
             {
               text: "Algoritmos",
