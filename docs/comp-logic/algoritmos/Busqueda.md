@@ -11,6 +11,11 @@ Clase que contiene implementaciones de algunos de los métodos de búsqueda más
 Los algoritmos necesitan de una lista de elementos y el elemento a encontrar. Los
 elementos deben implementar la interfaz Comparable para que el algoritmo funcione.
 
+::: tip Nota:
+En la prueba visual de la api, existe una prueba de la eficiencia de los algoritmos de
+búsqueda en la sección de `Busqueda`.
+:::
+
 **Índice de contenido**:
 [[toc]]
 

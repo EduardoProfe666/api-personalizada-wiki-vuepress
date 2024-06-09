@@ -15,7 +15,7 @@ El componente `ImagenAnimada` se encuentra en fase Beta, por tanto, no se encuen
 Solo se garantiza su correcto funcionamiento en contenedores con Absolute Layout.
 :::
 
-![a](/gifs/imagen-animada.gif)
+![a](   /gifs/imagen-animada.gif)
 
 > Constructores:
 >

@@ -17,6 +17,10 @@ try{
 } catch(UnsupportedLookAndFeelException e) {}
 ```
 
+::: tip Nota:
+En la prueba visual de la api, existe una prueba de estas funcionalidades en la sección de `Utilidades Interfaz`.
+:::
+
 ## Índice de contenido
 
 [[toc]]

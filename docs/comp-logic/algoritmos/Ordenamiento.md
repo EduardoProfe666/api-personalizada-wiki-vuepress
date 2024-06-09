@@ -8,8 +8,15 @@ title: Ordenamiento
 
 Clase que contiene implementaciones de algunos de los métodos de ordenamiento más usados.
 
-Los algoritmos necesitan de una lista de elementos (en el caso específico del `bucketSort` también necesita de la cantidad de cubos a emplear). Los
+Los algoritmos necesitan de una lista de elementos (en el caso específico del `bucketSort` también necesita de la
+cantidad de cubos a emplear). Los
 elementos deben implementar la interfaz Comparable para que el algoritmo funcione.
+
+::: tip Nota:
+En la prueba visual de la api, existe una prueba de la eficiencia de los algoritmos de
+ordenamiento en la sección de `Ordenamiento`.
+:::
+
 
 **Índice de contenido**:
 [[toc]]
@@ -44,12 +51,14 @@ Los algoritmos de búsqueda disponibles son:
 - **Particularidades:** Es fácil de implementar y funciona
   bien para listas pequeñas. Sin embargo, su eficiencia es baja, ya que requiere un número cuadrático de comparaciones
   e intercambios en el peor caso.
-- **Funcionamiento:** El proceso comienza comparando el primer elemento de la lista con el segundo elemento. Si el primer elemento es
+- **Funcionamiento:** El proceso comienza comparando el primer elemento de la lista con el segundo elemento. Si el
+  primer elemento es
   mayor que el segundo, se intercambian. Luego, se compara el segundo elemento con el tercer elemento y se intercambian
   si es necesario. Este proceso continúa hasta que se llega al último par de elementos de la lista. Si el último par
   de elementos se intercambia, se repite el proceso desde el principio hasta el penúltimo par de elementos. Este
   proceso se repite hasta que no se necesiten más intercambios. En cada iteración del algoritmo, el elemento más
-  grande de la lista se "burbujea" hasta el final de la lista, como si fuera una burbuja subiendo a la superficie del agua.
+  grande de la lista se "burbujea" hasta el final de la lista, como si fuera una burbuja subiendo a la superficie del
+  agua.
 - > **Ejemplo de uso:**
   >
   > ```java
@@ -63,7 +72,8 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `insertionSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento por inserción. Es un método sencillo de ordenamiento
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento por inserción. Es un método sencillo de
+  ordenamiento
   que funciona construyendo una lista ordenada a partir de una lista desordenada. El proceso comienza con
   el primer elemento de la lista desordenada y se inserta en la posición correcta en la lista ordenada.
   Luego, se toma el siguiente elemento de la lista desordenada y se inserta en su posición correcta en la lista
@@ -71,7 +81,8 @@ Los algoritmos de búsqueda disponibles son:
 - **Particularidades:** Es eficiente para
   listas pequeñas o listas que ya están ordenadas o casi ordenadas. El algoritmo es estable, lo que significa
   que la posición relativa de los elementos con valores iguales se mantiene después de la ordenación.
-- **Funcionamiento:** El proceso comienza con el primer elemento de la lista desordenada y se inserta en la posición correcta en la
+- **Funcionamiento:** El proceso comienza con el primer elemento de la lista desordenada y se inserta en la posición
+  correcta en la
   lista ordenada. Luego, se toma el siguiente elemento de la lista desordenada y se inserta en su posición correcta
   en la lista ordenada, y así sucesivamente hasta que se insertan todos los elementos de la lista desordenada.
   El proceso de inserción implica comparar el elemento actual con los elementos de la lista ordenada y desplazar
@@ -97,7 +108,8 @@ Los algoritmos de búsqueda disponibles son:
   ya que el número de cubos necesarios es proporcional al rango de enteros y no a la cantidad de elementos en la lista.
   Sin embargo, su eficiencia disminuye cuando el rango de enteros es grande. Además, el algoritmo requiere espacio
   adicional para almacenar los cubos, lo que puede ser un problema en sistemas con recursos limitados.
-- **Funcionamiento:** El proceso comienza con la creación de un arreglo de cubos, donde cada cubo representa un rango específico de enteros.
+- **Funcionamiento:** El proceso comienza con la creación de un arreglo de cubos, donde cada cubo representa un rango
+  específico de enteros.
   Los elementos de la lista se colocan en los cubos correspondientes según su valor. Luego, los elementos de cada cubo
   se ordenan, ya sea mediante el uso de otro algoritmo de ordenamiento o mediante la recursión del mismo algoritmo de
   ordenamiento de cubos. Finalmente, los elementos se toman de cada cubo en orden y se colocan en la lista de salida.
@@ -115,13 +127,15 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `selectionSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento por selección. Es un método simple de ordenamiento
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento por selección. Es un método simple de
+  ordenamiento
   que funciona encontrando repetidamente el elemento mínimo de una lista desordenada y colocándolo al principio de
   la lista. El proceso se repite hasta que la lista esté completamente ordenada.
 - **Particularidades:** Es fácil de implementar y funciona
   bien para listas pequeñas. Sin embargo, su eficiencia es baja, ya que requiere un número cuadrático de comparaciones
   y movimientos de elementos en el peor caso.
-- **Funcionamiento:** El proceso comienza encontrando el elemento mínimo de la lista desordenada y colocándolo en la primera posición de
+- **Funcionamiento:** El proceso comienza encontrando el elemento mínimo de la lista desordenada y colocándolo en la
+  primera posición de
   la lista. Luego, se encuentra el siguiente elemento mínimo en la sublista restante y se coloca en la segunda posición
   de la lista. Este proceso continúa hasta que se han encontrado todos los elementos mínimos de la lista y se han
   colocado en la posición correcta. En cada iteración, el algoritmo busca el elemento mínimo de la sublista restante y
@@ -140,15 +154,18 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `mergeSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de fusión. Es un método de ordenamiento eficiente
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de fusión. Es un método de ordenamiento
+  eficiente
   que funciona dividiendo repetidamente la lista en mitades más pequeñas y ordenándolas, para luego
-  fusionarlas en una lista ordenada. El algoritmo de ordenamiento por fusión también es utilizado en la implementación de otros
+  fusionarlas en una lista ordenada. El algoritmo de ordenamiento por fusión también es utilizado en la implementación
+  de otros
   algoritmos de ordenamiento, como el algoritmo de ordenamiento Timsort.
 - **Particularidades:** Es muy eficiente para grandes listas desordenadas, ya que su complejidad
   temporal es de O(n log n), donde n es el número de elementos en la lista. Además, es un algoritmo estable,
   lo que significa que la posición relativa de los elementos con valores iguales se mantiene después de la
   ordenación.
-- **Funcionamiento:** El proceso comienza dividiendo la lista en dos mitades iguales. Cada mitad se ordena recursivamente utilizando
+- **Funcionamiento:** El proceso comienza dividiendo la lista en dos mitades iguales. Cada mitad se ordena
+  recursivamente utilizando
   el mismo algoritmo de ordenamiento por fusión. El proceso de ordenamiento recursivo se repite hasta que las
   sublistas son lo suficientemente pequeñas como para ser ordenadas de manera trivial (por ejemplo, una sublista
   de un solo elemento ya está ordenada). Luego, se fusionan las sublistas ordenadas en una lista ordenada. El proceso
@@ -167,7 +184,8 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `quickSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento rapido. Es un método de ordenamiento eficiente que
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento rapido. Es un método de ordenamiento eficiente
+  que
   funciona dividiendo repetidamente la lista en dos sublistas más pequeñas, una con elementos menores que
   un pivote elegido y otra con elementos mayores, y luego ordenándolas recursivamente.
 - **Particularidades:** El algoritmo de ordenamiento
@@ -176,7 +194,8 @@ Los algoritmos de búsqueda disponibles son:
   ser de O(n^2), cuando el pivote elegido no es un buen representante del conjunto de datos o cuando la lista
   está casi ordenada. Para mitigar este problema, se pueden utilizar diversas técnicas, como la elección de
   pivotes aleatorios y la selección de pivotes medianos de tres elementos.
-- **Funcionamiento:** El proceso comienza seleccionando un elemento de la lista como pivote. Luego, se reorganiza la lista de manera
+- **Funcionamiento:** El proceso comienza seleccionando un elemento de la lista como pivote. Luego, se reorganiza la
+  lista de manera
   que los elementos menores que el pivote estén a su izquierda y los elementos mayores estén a su derecha. Este
   proceso se conoce como partición. Después de la partición, el pivote ocupa su posición final en la lista ordenada.
   Luego, se ordenan recursivamente las sublistas a la izquierda y a la derecha del pivote utilizando el mismo algoritmo
@@ -195,14 +214,16 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `heapSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de montículo. Es un método de ordenamiento que utiliza
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de montículo. Es un método de ordenamiento que
+  utiliza
   la estructura de datos de montículo (heap) para ordenar una lista de elementos.
 - **Particularidades:** El algoritmo de ordenamiento
   de montículo es eficiente para listas grandes, ya que su complejidad temporal es de O(n log n), donde n es
   el número de elementos en la lista. Sin embargo, su complejidad espacial es de O(n), porque se requiere
   espacio adicional para almacenar el montículo. Además, es un algoritmo in situ, es decir, que ordena la
   lista original sin necesidad de crear una copia adicional.
-- **Funcionamiento:** El proceso comienza construyendo un montículo a partir de la lista desordenada. Un montículo es una estructura
+- **Funcionamiento:** El proceso comienza construyendo un montículo a partir de la lista desordenada. Un montículo es
+  una estructura
   de datos en forma de árbol en la que cada nodo tiene un valor asociado y el valor de cada nodo es mayor o menor
   que el valor de sus hijos, dependiendo del tipo de montículo que se esté utilizando. En el caso del algoritmo de
   ordenamiento de montículo, se utiliza un max heap, donde el valor de cada nodo es mayor o igual que el valor de
@@ -223,7 +244,8 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `radixSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento por base. Funciona ordenando los elementos de una lista
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento por base. Funciona ordenando los elementos de
+  una lista
   según sus dígitos, de manera similar al algoritmo de ordenamiento por selección, pero en este caso se
   compara cada dígito en lugar de cada elemento completo.
 - **Particularidades:** Es eficiente para listas grandes y para listas
@@ -231,7 +253,8 @@ Los algoritmos de búsqueda disponibles son:
   elementos y al rango de valores (O(n k)), donde n es el número de elementos en la lista y k es el rango de valores.
   Sin embargo, su complejidad espacial puede ser alta, porque requiere espacio adicional para almacenar
   los grupos intermedios de elementos.
-- **Funcionamiento:** El proceso comienza por separar los elementos de la lista en grupos según el dígito menos significativo. Luego,
+- **Funcionamiento:** El proceso comienza por separar los elementos de la lista en grupos según el dígito menos
+  significativo. Luego,
   se ordenan los elementos dentro de cada grupo utilizando un algoritmo de ordenamiento estable (por ejemplo,
   el ordenamiento por inserción). Este proceso se repite para los dígitos más significativos, hasta que se hayan
   ordenado todos los dígitos de los elementos. Es importante destacar que el algoritmo de ordenamiento por base
@@ -250,14 +273,16 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `shellSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de Shell-Metzner. Es un método de ordenamiento que
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de Shell-Metzner. Es un método de ordenamiento
+  que
   se basa en el algoritmo de ordenamiento por inserción, pero que utiliza una estrategia de incrementos
   variables para mejorar su eficiencia.
 - **Particularidades:** No tiene una complejidad temporal fácil de definir, ya que depende
   de la secuencia de incrementos utilizada para separar los grupos de elementos. Sin embargo, se ha demostrado
   que el algoritmo de ordenamiento Shell tiene un rendimiento mejor que el algoritmo de ordenamiento
   por inserción para listas de tamaño mediano a grande.
-- **Funcionamiento:** El proceso comienza dividiendo la lista en grupos de elementos separados por una cantidad fija de posiciones.
+- **Funcionamiento:** El proceso comienza dividiendo la lista en grupos de elementos separados por una cantidad fija de
+  posiciones.
   Luego, se ordenan los grupos utilizando el algoritmo de ordenamiento por inserción. Este proceso se repite varias
   veces, cada vez con una cantidad de posiciones menor para separar los grupos. En cada iteración, se reduce la
   cantidad de posiciones utilizadas para separar los grupos, hasta llegar a la cantidad mínima de posiciones. La
@@ -279,21 +304,25 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `cocktailSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de coctel, también conocido como ordenamiento por sacudida u
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de coctel, también conocido como ordenamiento
+  por sacudida u
   ordenamiento de burbuja bidireccional. Es un método de ordenamiento que es similar al algoritmo de ordenamiento de
   burbuja, pero que funciona en ambas direcciones.
 - **Particularidades:** El algoritmo de ordenamiento por cóctel tiene una complejidad
   temporal de O(n^2) en el peor caso, donde n es el número de elementos en la lista. Debido a su baja eficiencia,
   este algoritmo se utiliza principalmente para fines educativos y para ordenar listas pequeñas.
-- **Funcionamiento:** El proceso comienza comparando el primer y el segundo elemento de la lista. Si el primer elemento es mayor que
+- **Funcionamiento:** El proceso comienza comparando el primer y el segundo elemento de la lista. Si el primer elemento
+  es mayor que
   el segundo, se intercambian. Luego, se compara el segundo y el tercer elemento, y así sucesivamente hasta llegar
   al final de la lista. Este proceso se repite hasta que no se realice ningún intercambio en una pasada completa de la
   lista. Una vez que se ha completado una pasada hacia adelante, se comienza una pasada hacia atrás, comenzando por el
   último y el penúltimo elemento. Si el último elemento es mayor que el penúltimo, se intercambian. Luego, se compara el
-  penúltimo y el antepenúltimo elemento, y así sucesivamente hasta llegar al principio de la lista. Este proceso se repite
+  penúltimo y el antepenúltimo elemento, y así sucesivamente hasta llegar al principio de la lista. Este proceso se
+  repite
   hasta que no se realice ningún intercambio en una pasada completa de la lista. El algoritmo de ordenamiento por coctel
   se repite alternando pasadas hacia adelante y hacia atrás hasta que la lista esté completamente ordenada. Una ventaja
-  de este algoritmo es que puede detectar cuando la lista ya está ordenada y detenerse antes de completar todas las pasadas.
+  de este algoritmo es que puede detectar cuando la lista ya está ordenada y detenerse antes de completar todas las
+  pasadas.
 - > **Ejemplo de uso:**
   >
   > ```java
@@ -314,7 +343,8 @@ Los algoritmos de búsqueda disponibles son:
   temporal promedio de O(n log n), donde n es el número de elementos en la lista. Sin embargo, su
   complejidad temporal en el peor caso puede ser O(n^2), por lo que se recomienda utilizar otros
   algoritmos de ordenamiento para listas grandes.
-- **Funcionamiento:** El proceso comienza comparando los primeros dos elementos de la lista y, si el primer elemento es mayor que el
+- **Funcionamiento:** El proceso comienza comparando los primeros dos elementos de la lista y, si el primer elemento es
+  mayor que el
   segundo, se intercambian. Luego, se compara el segundo y el tercer elemento, y así sucesivamente hasta el final
   de la lista. Este proceso se repite hasta que se llega al final de la lista. En este punto, se reduce la cantidad
   de elementos que se comparan en cada pasada utilizando un factor de reducción llamado "factor de peine". El factor
@@ -338,20 +368,25 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `gnomeSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de gnome, también conocido como ordenamiento de la planta de jardin u
-  ordenamiento de Stupid. Es un método de ordenamiento que es similar al algoritmo de ordenamiento por inserción, pero que
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de gnome, también conocido como ordenamiento de
+  la planta de jardin u
+  ordenamiento de Stupid. Es un método de ordenamiento que es similar al algoritmo de ordenamiento por inserción, pero
+  que
   utiliza una estrategia diferente para comparar y mover elementos en la lista.
 - **Particularidades:** El algoritmo de ordenamiento de gnome
   tiene una complejidad temporal promedio de O(n^2), donde n es el número de elementos en la lista.
   Debido a su baja eficiencia, este algoritmo se utiliza principalmente para fines educativos y
   para ordenar listas pequeñas.
-- **Funcionamiento:** El proceso comienza comparando los primeros dos elementos de la lista y, si el primer elemento es mayor que el
+- **Funcionamiento:** El proceso comienza comparando los primeros dos elementos de la lista y, si el primer elemento es
+  mayor que el
   segundo, se intercambian. Luego, se compara el segundo y el tercer elemento, y así sucesivamente hasta el final de
   la lista. Si se encuentra que un elemento está en la posición incorrecta, se intercambia con el elemento anterior y
-  se retrocede una posición en la lista. Este proceso se repite hasta que se llega al principio de la lista. El algoritmo
+  se retrocede una posición en la lista. Este proceso se repite hasta que se llega al principio de la lista. El
+  algoritmo
   de ordenamiento de gnome se repite varias veces, retrocediendo en la lista para mover los elementos a sus posiciones
   correctas. A diferencia del algoritmo de ordenamiento por inserción, no se utiliza una estrategia de comparación y
-  movimiento de elementos en una sola dirección, sino que se retrocede en la lista para mover los elementos a su posición
+  movimiento de elementos en una sola dirección, sino que se retrocede en la lista para mover los elementos a su
+  posición
   correcta.
 - > **Ejemplo de uso:**
   >
@@ -380,7 +415,8 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `timSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de Tim u ordenamiento por mezcla natural. Es un método
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de Tim u ordenamiento por mezcla natural. Es un
+  método
   de ordenamiento que combina las técnicas de los algoritmos de ordenamiento por inserción y por mezcla.
 - **Particularidades:** El algoritmo
   de ordenamiento Tim es especialmente eficiente para listas que contienen sublistas ordenadas,
@@ -405,7 +441,8 @@ Los algoritmos de búsqueda disponibles son:
 
 - **Arquetipo:** `oddEvenSort(List)`
 - **Parámetros:** Lista de elementos.
-- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de pares e impares. Es un método de ordenamiento que
+- **Descripción:** Algoritmo de ordenamiento que modela el ordenamiento de pares e impares. Es un método de ordenamiento
+  que
   utiliza dos fases para ordenar una lista de números enteros. En la primera fase, se ordenan los elementos
   pares, y en la segunda fase, se ordenan los elementos impares.
 - **Particularidades:** Este algoritmo es especialmente útil para
@@ -413,7 +450,8 @@ Los algoritmos de búsqueda disponibles son:
   El algoritmo de ordenamiento de pares e impares tiene una complejidad temporal promedio de
   O(n^2), donde n es el número de elementos en la lista. Debido a su baja eficiencia, este algoritmo se utiliza
   principalmente para fines educativos y para ordenar listas pequeñas.
-- **Funcionamiento:** El proceso comienza comparando los elementos en posiciones pares y sus vecinos impares. Si el elemento en
+- **Funcionamiento:** El proceso comienza comparando los elementos en posiciones pares y sus vecinos impares. Si el
+  elemento en
   la posición par es mayor que su vecino impar, se intercambian. Luego, se repite el proceso para todas las
   posiciones pares en la lista. En la segunda fase, se realiza el mismo proceso, pero esta vez se comparan las
   posiciones impares y sus vecinos pares. Si el elemento en la posición impar es mayor que su vecino par, se

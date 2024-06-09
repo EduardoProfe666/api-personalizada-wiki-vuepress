@@ -99,7 +99,6 @@ export default {
                                 "JLabelMultilineaMultialineado",
                                 "JTextFieldModificado",
                                 "Linea",
-                                "Notificaciones",
                                 "NotificacionesModernas",
                                 "PanelAnimacionCurvas",
                                 "PanelBordeOval",
@@ -111,7 +110,19 @@ export default {
                         },
                         {
                             text: "Componentes Externos",
-                            children: []
+                            children: [
+                                "/comp-vis/ext/Calendar",
+                                "/comp-vis/ext/Charts",
+                                "/comp-vis/ext/DatePicker",
+                                "/comp-vis/ext/Drawer",
+                                "/comp-vis/ext/GaugeChart",
+                                "/comp-vis/ext/GlassPanePopup",
+                                "/comp-vis/ext/ImagenFBR",
+                                "/comp-vis/ext/Pagination",
+                                "/comp-vis/ext/PieChart",
+                                "/comp-vis/ext/SpinnerProgress",
+                                "/comp-vis/ext/TimePicker",
+                            ]
                         },
 
                     ],

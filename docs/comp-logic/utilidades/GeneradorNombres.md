@@ -14,6 +14,10 @@ El acceso a estos métodos es de manera estática. Por ejemplo:
 String nombre = GeneradorNombres.generarNombre(Sexo.Masculino, Complejidad.SIMPLE);
 ```
 
+::: tip Nota:
+En la prueba visual de la api, existe una prueba de estas funcionalidades en la sección de `Generadores`.
+:::
+
 ## Índice de contenido
 
 [[toc]]

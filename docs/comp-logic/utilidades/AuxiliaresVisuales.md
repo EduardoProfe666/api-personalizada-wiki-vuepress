@@ -14,6 +14,10 @@ El acceso a estos métodos es de manera estática. Por ejemplo:
 Icon icono = AuxiliaresVisuales.ajustarImagen(new Dimension(50,50), ClaseBase.class.getResource("/img/icono.png"));
 ```
 
+::: tip Nota:
+En la prueba visual de la api, existe una prueba de estas funcionalidades en la sección de `Utilidades Interfaz`.
+:::
+
 ## Índice de contenido
 
 [[toc]]
