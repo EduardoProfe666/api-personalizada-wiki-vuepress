@@ -9,6 +9,9 @@ title: Vincular el JavaDoc de la api
 Para poder ver el `JavaDoc` de las clases, métodos y atributos de la clase es necesario vincularla en
 el `Build Path` de la api.
 
+En el [siguiente video de Youtube](https://www.youtube.com/watch?v=hN1BojF_lsY) también sale 
+como se puede realizar esta operación.
+
 ## Eclipse IDE
 
 En Eclipse IDE se siguen los siguientes pasos:

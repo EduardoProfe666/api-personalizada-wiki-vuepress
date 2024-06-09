@@ -8,6 +8,9 @@ title: Importación de la api
 
 Una vez descargada la `api.jar` es necesario vincularla al proyecto.
 
+En el [siguiente video de Youtube](https://www.youtube.com/watch?v=hN1BojF_lsY) también sale
+como se puede realizar esta operación.
+
 ## Eclipse IDE
 
 En Eclipse IDE se siguen los siguientes pasos:
