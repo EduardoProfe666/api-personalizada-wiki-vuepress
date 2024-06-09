@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0c77f7c6","path":"/comp-vis/ext/Drawer.html","title":"Drawer","lang":"en-US","frontmatter":{"title":"Drawer"},"headers":[],"git":{"updatedTime":1717921603000,"contributors":[{"name":"Eduardo Alejandro González Martell","email":"eduardoglez64377@gmail.com","commits":1}]},"filePathRelative":"comp-vis/ext/Drawer.md"}');export{e as data};

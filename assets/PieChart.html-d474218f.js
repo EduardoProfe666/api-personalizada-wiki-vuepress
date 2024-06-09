@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-60851c25","path":"/comp-vis/ext/PieChart.html","title":"PieChart","lang":"en-US","frontmatter":{"title":"PieChart"},"headers":[],"git":{"updatedTime":1717921603000,"contributors":[{"name":"Eduardo Alejandro González Martell","email":"eduardoglez64377@gmail.com","commits":1}]},"filePathRelative":"comp-vis/ext/PieChart.md"}');export{e as data};

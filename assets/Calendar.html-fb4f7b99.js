@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9645f3ce","path":"/comp-vis/ext/Calendar.html","title":"Calendar","lang":"en-US","frontmatter":{"title":"Calendar"},"headers":[],"git":{"updatedTime":1717921603000,"contributors":[{"name":"Eduardo Alejandro González Martell","email":"eduardoglez64377@gmail.com","commits":1}]},"filePathRelative":"comp-vis/ext/Calendar.md"}');export{e as data};

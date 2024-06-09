@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-78b34610","path":"/comp-vis/ext/ImagenFBR.html","title":"ImagenFBR","lang":"en-US","frontmatter":{"title":"ImagenFBR"},"headers":[],"git":{"updatedTime":1717921603000,"contributors":[{"name":"Eduardo Alejandro González Martell","email":"eduardoglez64377@gmail.com","commits":1}]},"filePathRelative":"comp-vis/ext/ImagenFBR.md"}');export{e as data};
