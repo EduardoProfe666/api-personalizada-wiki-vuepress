@@ -6,7 +6,7 @@ import ParentLayout from "@vuepress/theme-default/layouts/Layout.vue";
   <ParentLayout>
     <template #page-bottom>
       <div class="my-footer">
-        Licencia MIT | Copyright © 2023-Presente |
+        Licencia MIT | Copyright © 2022-{{year}} |
         <a href="https://github.com/EduardoProfe666">EduardoProfe666🎩</a>
       </div>
     </template>
@@ -17,12 +17,14 @@ import ParentLayout from "@vuepress/theme-default/layouts/Layout.vue";
 .my-footer {
   text-align: center;
 }
+
 :root {
   scroll-behavior: smooth;
 
   --c-brand: #7139a9;
   --c-brand-light: #8748c6;
 }
+
 html.dark {
   scroll-behavior: smooth;
 
@@ -30,3 +32,7 @@ html.dark {
   --c-brand-light: #8748c6;
 }
 </style>
+
+<script>
+const year = new Date().getFullYear();
+</script>
